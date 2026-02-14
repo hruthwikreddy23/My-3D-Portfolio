@@ -1,4 +1,4 @@
-import logo from "./hrulogo.png";
+import hrulogo from "./hrulogo.png";
 import backend from "./backend.png";
 import cloud from "./cloud.png";
 import github from "./github.png";
@@ -33,7 +33,7 @@ import margala from "./testimonials/margala.png";
 import priya from "./testimonials/priya.png";
 
 export {
-  logo,
+  hrulogo,
   backend,
   cloud,
   github,
