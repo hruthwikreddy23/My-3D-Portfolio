@@ -24,9 +24,9 @@ import aws from "./tech/aws.png";
 import python from "./tech/python.png";
 import restapi from "./tech/restapi.png";
 
-import podiumai from "./PODiumAI.png";
-import unicycle from "./UNICYCLE.png";
-import Campusconnect from "./CampusCONNECT.png";
+import podiumai from "./podiumai.png";
+import unicycle from "./unicycle.png";
+import Campusconnect from "./campusconnect.png";
 
 import carol from "./testimonials/carol.png";
 import margala from "./testimonials/margala.png";
