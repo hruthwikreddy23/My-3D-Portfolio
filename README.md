@@ -89,4 +89,23 @@ src/
  └── main.jsx
 ```
 
+## 🚀 Deployment
+
+This portfolio is deployed on **Vercel** with automated **CI/CD integration via GitHub**.
+
+Every push to the `main` branch triggers a new **production deployment**.
+
+---
+
+## 📬 Contact
+
+- 📧 **Email:** [hruthwikreddy2326@gmail.com](mailto:hruthwikreddy2326@gmail.com)  
+- 🌐 **Portfolio:** [https://hruthwik.vercel.app/](https://hruthwik.vercel.app/)
+
+---
+
+## ⭐ Support
+
+If you like this project, feel free to ⭐ **star the repository** and connect with me.
+
 
