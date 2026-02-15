@@ -35,26 +35,26 @@ An immersive 3D developer portfolio showcasing interactive WebGL animations, flo
 
 ## 🛠 Tech Stack
 
+## 🛠 Tech Stack
+
 ### Frontend
-<p>
-  <img src="https://img.shields.io/badge/React-19.x-61DAFB?logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Vite-7.x-646CFF?logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white" />
-  <img src="https://img.shields.io/badge/Framer_Motion-EF008F?logo=framer&logoColor=white" />
-</p>
+- ![React](https://img.shields.io/badge/React-19.x-61DAFB?logo=react&logoColor=black)
+- ![Vite](https://img.shields.io/badge/Vite-7.x-646CFF?logo=vite&logoColor=white)
+- ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white)
+- ![Framer Motion](https://img.shields.io/badge/Framer_Motion-EF008F?logo=framer&logoColor=white)
+
+---
 
 ### 3D Rendering
-<p>
-  <img src="https://img.shields.io/badge/Three.js-000000?logo=three.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/@react--three/fiber-000000?logo=react&logoColor=white" />
-  <img src="https://img.shields.io/badge/@react--three/drei-111111" />
-</p>
+- ![Three.js](https://img.shields.io/badge/Three.js-000000?logo=three.js&logoColor=white)
+- ![@react-three/fiber](https://img.shields.io/badge/@react--three/fiber-000000?logo=react&logoColor=white)
+- ![@react-three/drei](https://img.shields.io/badge/@react--three/drei-111111)
+
+---
 
 ### Deployment & Tooling
-<p>
-  <img src="https://img.shields.io/badge/Vercel-Deployed-000000?logo=vercel&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-CI/CD-181717?logo=github&logoColor=white" />
-</p>
+- ![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?logo=vercel&logoColor=white)
+- ![GitHub](https://img.shields.io/badge/GitHub-CI/CD-181717?logo=github&logoColor=white)
 
 ---
 
