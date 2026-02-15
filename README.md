@@ -12,7 +12,20 @@
 
 ---
 
-## 🌐 Live Website
+## 📋 Table of Contents
+
+1. 🌐 [Introduction](#-introduction)
+2. ✨ [Key Features](#-key-features)
+3. 🛠 [Tech Stack](#-tech-stack)
+4. 🧠 [Engineering Highlights](#-engineering-highlights)
+5. 📂 [Project Structure](#-project-structure)
+6. 🚀 [Deployment](#-deployment)
+7. 📬 [Contact](#-contact)
+8. ⭐ [Support](#-support)
+
+---
+
+## 🌐 Introduction
 
 🔗 **https://hruthwik.vercel.app/**
 
@@ -33,7 +46,6 @@ An immersive 3D developer portfolio showcasing interactive WebGL animations, flo
 
 ---
 
-## 🛠 Tech Stack
 
 ## 🛠 Tech Stack
 
