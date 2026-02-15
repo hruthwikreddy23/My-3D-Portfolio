@@ -71,3 +71,22 @@ An immersive 3D developer portfolio showcasing interactive WebGL animations, flo
 
 ## 📂 Project Structure
 
+
+```
+src/
+ ├── assets/
+ ├── components/
+ │    ├── canvas/
+ │    ├── About.jsx
+ │    ├── Experience.jsx
+ │    ├── Tech.jsx
+ │    ├── Contact.jsx
+ ├── constants/
+ ├── hoc/
+ ├── utils/
+ ├── styles.js
+ ├── App.jsx
+ └── main.jsx
+```
+
+
