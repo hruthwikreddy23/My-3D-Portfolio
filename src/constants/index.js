@@ -1,6 +1,5 @@
+import { split } from "postcss/lib/list";
 import {
-  
-  backend,
   javascript,
   typescript,
   reactjs,
@@ -10,23 +9,25 @@ import {
   git,
   docker,
   threejs,
-  fsd,
   frontend,
-  cloud,
-  optum,
   ull,
   nextjs,
   aws,
   python,
   restapi,
-  podiumai,
   unicycle,
   Campusconnect,
   carol,
   margala,
   priya,
+  dv,
+  uix, 
+  ai,
+  vmware,
+  splitsync,
   
 } from "../assets";
+import { source } from "framer-motion/client";
 
 export const navLinks = [
   {
@@ -45,20 +46,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Full Stack Developer",
-    icon: fsd,
-  },
-  {
-    title: "Frontend / UI Engineer",
+    title: "Frontend Engineer",
     icon: frontend,
   },
   {
-    title: "Backend / API Developer",
-    icon: backend,
+    title: "UI/UX Developer",
+    icon: uix,
   },
   {
-    title: "Cloud / SaaS Engineer",
-    icon: cloud,
+    title: "Data Visualization Engineer",
+    icon: dv,
+  },
+  {
+    title: "AI-enabled Web Developer",
+    icon: ai,
   },
 ];
 
@@ -119,29 +120,29 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Engineer",
-    company_name: "Optum",
-    icon: optum,
-    iconBg: "#383E56",
-    date: "Oct 2023 - Nov 2024",
+    title: "Frontend Engineer",
+    company_name: "VMware",
+    icon: vmware,
+    iconBg: "#020511ff",
+    date: "Sep 2023 - Nov 2024",
     points: [
-      "Contributed to the Core Investment platform enabling financial transactions such as Buy, Sell, Cancel, and Dividend processing for HSA accounts.",
-      "Developed and maintained REST APIs and microservices supporting transaction workflows and system integrations.",
-      "Worked with AWS services (S3, SQS, SNS, ECS, CloudWatch) for distributed application workflows and monitoring.",
-      "Collaborated with cross-functional teams to deliver production features, testing, and performance improvements.",
+      "Built data-driven dashboards and frontend interfaces to visualize telecom network performance and usage trends.",
+      "Designed interactive data visualizations using JavaScript charting libraries, improving data accessibility for internal teams.",
+      "Developed backend APIs and data pipelines to support real-time analytics dashboards and system integrations.",
+      "Automated data workflows and reporting processes, improving efficiency and reducing manual effort across teams.",
     ],
   },
   {
-    title: "Graduate Teaching Assistant",
+    title: "Research & Teaching Assistant",
     company_name: "University of Louisiana at Lafayette",
     icon: ull,
     iconBg: "#0c0d0fff",
     date: "Jan 2025 - Present",
     points: [
-      "Built an automated shift-scheduling system for ~50 student employees using Microsoft Power Apps, Power Automate, and Teams.",
-      "Developed workflow automation and rule-based scheduling logic using Microsoft Graph APIs.",
-      "Maintained lab infrastructure and MFP printers, handling OS updates, troubleshooting, hardware support, and system reliability.",
-      "Supported academic web systems and contributed using React, Tailwind CSS, JavaScript, and Python (Django / FastAPI).",
+      "Built and maintained university web platforms using React, improving performance, responsiveness, and accessibility (WCAG).",
+      "Developed interactive dashboards and data visualization interfaces for 15+ departments, enabling efficient data monitoring.",
+      "Designed frontend workflows integrating REST APIs, reducing manual reporting effort by ~60%.",
+      "Created a scheduling interface for 50+ users, automating shift coordination and improving efficiency by ~70%.",
     ],
   }, 
   
@@ -176,9 +177,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "PODiumAI",
+    name: "SplitSync AI",
     description:
-      "Full-stack SaaS platform enabling users to generate AI-powered podcasts with multi-voice support, real-time data handling, and secure authentication. Built with a modern React / Next.js architecture and designed for performance and scalability.",
+      "AI-powered expense management platform for real-time group expense tracking and automated balance settlement. Built with Next.js, featuring interactive dashboards, AI-based receipt processing, and intuitive multi-user workflows for simplified expense sharing.",
     tags: [
       {
         name: "nextjs",
@@ -189,28 +190,29 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
       {
-        name: "openai",
+        name: "Gen ai",
         color: "green-text-gradient",
       },
       {
-        name: "clerk",
+        name: "Data Visualization",
         color: "blue-text-gradient",
       },
       {
-        name: "convex",
+        name: "recharts",
         color: "white-text-gradient",
       },
     ],
-    image: podiumai,
+    image: splitsync,
+    source_code_link: "https://github.com/hruthwikreddy23/SplitSync-AI",
   },
   {
     name: "CampusCONNECT",
     description:
-      "Web Platform designed for centralized campus event discovery, registrations, and payments. Implemented role-based workflows, secure file uploads, and responsive dashboards for students and organizers.",
+      "AI-enabled event management platform for discovering and managing campus events. Built with Next.js, featuring dual user portals, responsive UI, AI-generated event content, and an assistant chatbot to improve engagement and event workflows.",
     tags: [
       {
         name: "nextjs",
@@ -221,7 +223,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "RAG",
         color: "pink-text-gradient",
       },
       {

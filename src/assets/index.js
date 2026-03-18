@@ -1,13 +1,13 @@
 import hrulogo from "./hrulogo.png";
-import backend from "./backend.png";
-import cloud from "./cloud.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import fsd from "./fsd.png";
 import frontend from "./frontend.png";
+import dv from "./dv.png";
+import uix from "./uix.png";
+import ai from "./ai.png";
+import vmware from "./company/vmware.png";
 
-import optum from "./company/optum.png";
 import ull from "./company/ull.png";
 
 import docker from "./tech/docker.png";
@@ -24,7 +24,7 @@ import aws from "./tech/aws.png";
 import python from "./tech/python.png";
 import restapi from "./tech/restapi.png";
 
-import podiumai from "./podiumai.png";
+import splitsync from "./splitsync.png";
 import unicycle from "./unicycle.png";
 import Campusconnect from "./campusconnect.png";
 
@@ -34,8 +34,6 @@ import priya from "./testimonials/priya.png";
 
 export {
   hrulogo,
-  backend,
-  cloud,
   github,
   menu,
   close,
@@ -48,18 +46,20 @@ export {
   tailwind,
   typescript,
   threejs,
-  fsd,
   frontend,
-  optum,
   ull,
   nextjs,
   aws,
   python,
   restapi,
-  podiumai,
   unicycle,
   Campusconnect,
   carol,
   margala,
   priya,
+  dv,
+  uix,
+  ai,
+  vmware,
+  splitsync,
 };

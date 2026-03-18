@@ -45,14 +45,12 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-5xl leading-[30px] text-justify'
       >
-        I’m a Full-Stack Software Engineer with 2+ years of experience building 
-        enterprise applications and modern web systems. I specialize in React, 
-        Next.js, TypeScript, and backend APIs, with hands-on experience developing 
-        secure, scalable, and AI-enabled SaaS platforms. Currently, I’m a Graduate 
-        Teaching Assistant and a Master’s student in Computer Science (GPA: 4.0), 
-        graduating May 2026, and actively seeking Software Engineer / Full-Stack roles.
+        I’m a Frontend Engineer with 2+ years of experience building interactive web applications, analytics dashboards, and user-focused platforms.
+        I specialize in React, Next.js, and TypeScript, with strong experience in data visualization, API integration, and building AI-enabled web applications.
+        I’ve developed scalable frontend systems and real-time dashboards that transform complex data into intuitive user experiences for hundreds of users.
+        Currently pursuing my Master’s in Computer Science (GPA: 4.0), I’m seeking frontend-focused software engineering roles.
 
       </motion.p>
 
