@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- White background (Vercel is black-on-white) -->
+  <rect width="256" height="256" fill="#ffffff" rx="32"/>
+
+  <!-- Vercel triangle logomark — centred, generous size -->
+  <polygon points="128,52  220,192  36,192" fill="#000000"/>
+
+  <!-- "Vercel" wordmark -->
+  <text x="128" y="234"
+        font-family="'Arial Black', 'Arial Bold', Arial, sans-serif"
+        font-size="26"
+        font-weight="900"
+        fill="#000000"
+        text-anchor="middle"
+        letter-spacing="3">VERCEL</text>
+</svg>

@@ -47,10 +47,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-5xl leading-[30px] text-justify'
       >
-        I’m a Frontend Engineer with 2+ years of experience building interactive web applications, analytics dashboards, and user-focused platforms.
-        I specialize in React, Next.js, and TypeScript, with strong experience in data visualization, API integration, and building AI-enabled web applications.
-        I’ve developed scalable frontend systems and real-time dashboards that transform complex data into intuitive user experiences for hundreds of users.
-        Currently pursuing my Master’s in Computer Science (GPA: 4.0), I’m seeking frontend-focused software engineering roles.
+        Software Engineer with 3+ years of experience designing multi-agent AI systems — LLM agent orchestration, AWS Bedrock integration, tool-augmented workflows, and retrieval-augmented generation (RAG) — alongside object-oriented, multi-threaded distributed systems in Java, Spring Boot, Python, and TypeScript.
+        Skilled in responsible AI practices, AWS CDK infrastructure-as-code, full-SDLC ownership, and cloud-native deployment.
+        I deliver measurable performance and scalability gains for systems serving 20,000+ users.
+        Currently pursuing my Master’s in Computer Science (GPA: 4.0) at UL Lafayette.
 
       </motion.p>
 

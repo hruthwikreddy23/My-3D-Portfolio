@@ -45,7 +45,7 @@ const Navbar = () => {
           <img src={hrulogo} alt='hrulogo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             HRUTHWIK REDDY MARIKANTI &nbsp;
-            <span className='sm:block hidden'> | Frontend Engineer </span>
+            <span className='sm:block hidden'> | Full Stack Software Engineer </span>
           </p>
         </Link>
 

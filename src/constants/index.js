@@ -1,33 +1,32 @@
-import { split } from "postcss/lib/list";
 import {
   javascript,
   typescript,
   reactjs,
   tailwind,
   nodejs,
-  mongodb,
-  git,
-  docker,
   threejs,
-  frontend,
+  backend,
+  cloud,
+  fsd,
+  ai,
   ull,
   nextjs,
   aws,
   python,
   restapi,
-  unicycle,
-  Campusconnect,
   carol,
   margala,
   priya,
-  dv,
-  uix, 
-  ai,
-  vmware,
-  splitsync,
-  
+  gsap,
+  framer,
+  graphql,
+  vercel,
+  deloitte,
+  cajunAsr,
+  adServing,
+  schedulex,
+  apiGuard,
 } from "../assets";
-import { source } from "framer-motion/client";
 
 export const navLinks = [
   {
@@ -46,20 +45,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Frontend Engineer",
-    icon: frontend,
+    title: "Software Engineer",
+    icon: backend,
   },
   {
-    title: "UI/UX Developer",
-    icon: uix,
-  },
-  {
-    title: "Data Visualization Engineer",
-    icon: dv,
-  },
-  {
-    title: "AI-enabled Web Developer",
+    title: "Agentic AI Engineer",
     icon: ai,
+  },
+  {
+    title: "Cloud & Data Engineer",
+    icon: cloud,
+  },
+  {
+    title: "Full Stack Developer",
+    icon: fsd,
   },
 ];
 
@@ -97,14 +96,6 @@ const technologies = [
     icon: aws,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -113,39 +104,54 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
-    icon: git,
+    name: "GSAP",
+    icon: gsap,
+  },
+  {
+    name: "Framer Motion",
+    icon: framer,
+  },
+  {
+    name: "GraphQL",
+    icon: graphql,
+  },
+  {
+    name: "Vercel",
+    icon: vercel,
   },
 ];
 
 const experiences = [
   {
-    title: "Frontend Engineer",
-    company_name: "VMware",
-    icon: vmware,
-    iconBg: "#020511ff",
-    date: "Sep 2023 - Nov 2024",
+    title: "Software Engineer",
+    company_name: "Deloitte",
+    icon: deloitte,
+    iconBg: "#022B3A",
+    date: "May 2023 – Dec 2024",
     points: [
-      "Built data-driven dashboards and frontend interfaces to visualize telecom network performance and usage trends.",
-      "Designed interactive data visualizations using JavaScript charting libraries, improving data accessibility for internal teams.",
-      "Developed backend APIs and data pipelines to support real-time analytics dashboards and system integrations.",
-      "Automated data workflows and reporting processes, improving efficiency and reducing manual effort across teams.",
+      "Designed object-oriented, multi-tiered Spring Boot microservices using Controller-Service-Repository layered architecture with interface-based abstractions and Spring IoC dependency injection, reducing onboarding time for new services by 40% while enforcing OAuth2/JWT-based access control.",
+      "Developed multi-threaded, asynchronous request handling using Spring's thread pool for distributed RESTful APIs backed by MongoDB, delivering sub-50ms response times during peak operational loads.",
+      "Built concurrent Node.js/Express microservices handling parallel API calls and webhook-based integrations across multiple third-party systems, reducing average processing times by 25%.",
+      "Containerized services with Docker and deployed on AWS ECS and Azure AKS using blue-green deployment strategies, cutting release downtime by 30%.",
+      "Designed and maintained Jenkins CI/CD pipelines with SonarQube static analysis, enforcing coding standards and cutting manual deployment effort by 50%.",
+      "Built responsive Angular dashboards with real-time visualizations and centralized Log4j/Elasticsearch logging, cutting error triage time by 45%.",
     ],
   },
   {
-    title: "Research & Teaching Assistant",
+    title: "Software Engineer, AI/ML & Data Systems | Research Assistant",
     company_name: "University of Louisiana at Lafayette",
     icon: ull,
     iconBg: "#0c0d0fff",
-    date: "Jan 2025 - Present",
+    date: "Jan 2025 – May 2026",
     points: [
-      "Built and maintained university web platforms using React, improving performance, responsiveness, and accessibility (WCAG).",
-      "Developed interactive dashboards and data visualization interfaces for 15+ departments, enabling efficient data monitoring.",
-      "Designed frontend workflows integrating REST APIs, reducing manual reporting effort by ~60%.",
-      "Created a scheduling interface for 50+ users, automating shift coordination and improving efficiency by ~70%.",
+      "Architected multi-agent LangChain workflows with tool-augmented orchestration, shared context management, and parallel agent execution, integrating AWS Bedrock for LLM invocation and MLflow for systematic evaluation across LLM-based services.",
+      "Orchestrated multi-step agentic workflows using AWS Step Functions for stateful, long-running LLM pipeline execution, and provisioned agentic AI infrastructure as code using AWS CDK for repeatable, scalable deployments.",
+      "Engineered production backend services for distributed, university-wide web platforms using Python and FastAPI, optimizing SQL queries and improving system responsiveness by 40% for 21,000+ users across 15+ departments.",
+      "Fine-tuned a Whisper-based ASR model on 100+ hours of Cajun-French speech using QLoRA, PyTorch FSDP, and mixed-precision training on HPC/CUDA clusters, achieving a 21% WER reduction and 40% lower VRAM usage.",
+      "Engineered ML infrastructure for 20+ reporting services with CloudWatch alarms and Prometheus/Grafana dashboards, cutting report generation from 8 hours to under 30 seconds.",
+      "Built large-scale distributed ETL pipelines processing 500,000+ institutional records, integrating Banner ERP and Moodle LMS data sources, reducing manual data entry by 90%.",
     ],
-  }, 
-  
+  },
 ];
 
 const testimonials = [
@@ -154,7 +160,7 @@ const testimonials = [
       "Hruthwik demonstrates strong problem-solving skills and a structured approach to development. He consistently delivers clear, practical, and well-designed solutions.",
     name: "Carol Edwards",
     designation: "Manager",
-    company: "ULL UCSS STEP ",
+    company: "ULL UCSS STEP",
     image: carol,
   },
   {
@@ -177,97 +183,108 @@ const testimonials = [
 
 const projects = [
   {
-    name: "SplitSync AI",
+    name: "Cajun-French ASR & Agentic AI System",
     description:
-      "AI-powered expense management platform for real-time group expense tracking and automated balance settlement. Built with Next.js, featuring interactive dashboards, AI-based receipt processing, and intuitive multi-user workflows for simplified expense sharing.",
+      "Fine-tuned a Whisper ASR model on 100+ hours of Cajun-French audio using PyTorch FSDP, QLoRA, and mixed-precision training on HPC/CUDA clusters (21% WER reduction). Built a LangChain + Pinecone RAG system with real-time WebSocket streaming inference and Voice Activity Detection.",
     tags: [
       {
-        name: "nextjs",
+        name: "PyTorch",
         color: "blue-text-gradient",
       },
       {
-        name: "typescript",
+        name: "HuggingFace",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "LangChain",
         color: "pink-text-gradient",
       },
       {
-        name: "Gen ai",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Data Visualization",
+        name: "Pinecone",
         color: "blue-text-gradient",
       },
       {
-        name: "recharts",
-        color: "white-text-gradient",
+        name: "CUDA/HPC",
+        color: "green-text-gradient",
       },
     ],
-    image: splitsync,
-    source_code_link: "https://github.com/hruthwikreddy23/SplitSync-AI",
+    image: cajunAsr,
   },
   {
-    name: "CampusCONNECT",
+    name: "Open-Source Ad Serving Platform",
     description:
-      "AI-enabled event management platform for discovering and managing campus events. Built with Next.js, featuring dual user portals, responsive UI, AI-generated event content, and an assistant chatbot to improve engagement and event workflows.",
+      "Distributed ML-powered ad serving pipeline (Retrieval-Filter-Predict-Rank) using PyTorch DeepFM/LR/FM models on Criteo ad logs (AUC 0.76). Achieved <10ms P99 latency and 150+ QPS/node at 1M+ DAU scale with Redis frequency capping and Prometheus/Grafana observability.",
     tags: [
       {
-        name: "nextjs",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "typescript",
+        name: "FastAPI",
         color: "green-text-gradient",
       },
       {
-        name: "RAG",
+        name: "PyTorch",
         color: "pink-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "white-text-gradient",
+        name: "PostgreSQL",
+        color: "blue-text-gradient",
       },
       {
-        name: "stripe",
+        name: "Redis",
         color: "green-text-gradient",
       },
+      {
+        name: "DynamoDB",
+        color: "white-text-gradient",
+      },
     ],
-    image: Campusconnect,
+    image: adServing,
   },
   {
-    name: "UNICYCLE",
+    name: "ScheduleX – Shift Management System",
     description:
-      "Campus-focused marketplace enabling students to exchange academic resources such as books, gadgets, and study materials. Implemented AI-powered descriptions, price recommendations, .edu-only authentication, and buyer–seller workflows.",
+      "Full-stack React and Supabase scheduling platform supporting 500+ weekly shifts for 50 student workers. Engineered a FIFO approval engine using Priority Queue, Greedy, and Hash Set algorithms processing 1,300+ shift requests, with GPS clock-in tracking and 180ms real-time sync.",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "typescript",
+        name: "TypeScript",
         color: "green-text-gradient",
       },
       {
-        name: "LLaMA",
+        name: "Supabase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: schedulex,
+  },
+  {
+    name: "API-ContractGuard",
+    description:
+      "Modular, object-oriented Node.js CLI validating API responses against JSON Schema contracts with 99.9% drift detection. Backed by a 36-test Jest suite (98% coverage) with three-tier PASS/WARNING/FAIL reporting across 10 endpoints, integrated into CI/CD to automatically block breaking changes.",
+    tags: [
+      {
+        name: "Node.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JSON Schema",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Jest",
         color: "pink-text-gradient",
       },
       {
-        name: "stripe",
-        color: "white-text-gradient",
-      },
-      {
-        name: "clerk",
+        name: "CI/CD",
         color: "blue-text-gradient",
       },
-      {
-        name: "ZOD",
-        color: "green-text-gradient",
-      },
     ],
-    image: unicycle,
+    image: apiGuard,
   },
 ];
 

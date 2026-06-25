@@ -1,14 +1,38 @@
-import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
+import { Suspense, useEffect, useRef, useState } from "react";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { Color, MathUtils } from "three";
 
-import CanvasLoader from "../Loader";
+const SetBackground = () => {
+  const { scene } = useThree();
+  useEffect(() => {
+    scene.background = new Color("#050816");
+  }, [scene]);
+  return null;
+};
 
 const Computers = ({ isMobile }) => {
+  const groupRef = useRef();
+  const hovering = useRef(false);
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
+  useFrame((state) => {
+    if (!groupRef.current) return;
+    const { x, y } = state.pointer;
+    // Tilt toward cursor only while the pointer is over the model;
+    // smoothly return to neutral when the cursor leaves.
+    const targetX = hovering.current ? y * 0.12 : 0;
+    const targetY = hovering.current ? x * 0.3  : 0;
+    groupRef.current.rotation.x = MathUtils.lerp(groupRef.current.rotation.x, targetX, 0.05);
+    groupRef.current.rotation.y = MathUtils.lerp(groupRef.current.rotation.y, targetY, 0.05);
+  });
+
   return (
-    <mesh>
+    <group
+      ref={groupRef}
+      onPointerEnter={() => (hovering.current = true)}
+      onPointerLeave={() => (hovering.current = false)}
+    >
       <hemisphereLight intensity={2} groundColor='black' />
       <spotLight
         position={[-20, 50, 10]}
@@ -25,7 +49,7 @@ const Computers = ({ isMobile }) => {
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -2.3]}
         rotation={[-0.01, -0.2, -0.1]}
       />
-    </mesh>
+    </group>
   );
 };
 
@@ -33,43 +57,36 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
-
-    // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
-
-    // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    // Add the callback function as a listener for changes to the media query
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
     mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    // Remove the listener when the component is unmounted
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
   }, []);
 
   return (
     <Canvas
-      frameloop='demand'
+      frameloop='always'
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
+      onCreated={({ scene }) => {
+        scene.background = new Color("#050816");
+      }}
     >
-      <Suspense fallback={<CanvasLoader />}>
+      <SetBackground />
+      <Suspense fallback={null}>
+        {/* autoRotate gives the slow base orbit; click+drag overrides it */}
         <OrbitControls
+          autoRotate
+          autoRotateSpeed={0.5}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
         <Computers isMobile={isMobile} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );

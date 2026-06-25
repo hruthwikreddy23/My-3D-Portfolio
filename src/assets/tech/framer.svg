@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Dark background -->
+  <rect width="256" height="256" fill="#0d0d0d" rx="32"/>
+
+  <!-- Framer "F" logomark — the iconic Framer triangle/chevron shape -->
+  <!-- Top half: full-width bar -->
+  <polygon points="68,52  188,52  188,120  128,120" fill="#BB4BFF"/>
+  <!-- Bottom-left triangle -->
+  <polygon points="68,120  128,120  68,188" fill="#BB4BFF" opacity="0.7"/>
+  <!-- Bottom-right triangle -->
+  <polygon points="128,120  188,120  128,188" fill="#BB4BFF"/>
+
+  <!-- "motion" wordmark -->
+  <text x="128" y="222"
+        font-family="'Arial Black', 'Arial Bold', Arial, sans-serif"
+        font-size="22"
+        font-weight="900"
+        fill="#BB4BFF"
+        text-anchor="middle"
+        letter-spacing="3">FRAMER MOTION</text>
+</svg>

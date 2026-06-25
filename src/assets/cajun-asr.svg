@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 230">
+  <defs>
+    <linearGradient id="asr-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c29"/>
+      <stop offset="100%" style="stop-color:#24243e"/>
+    </linearGradient>
+    <linearGradient id="wave-grd" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00c6ff;stop-opacity:0.2"/>
+      <stop offset="50%" style="stop-color:#00c6ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0072ff;stop-opacity:0.2"/>
+    </linearGradient>
+    <linearGradient id="rag-grd" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#6d28d9"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="360" height="230" fill="url(#asr-bg)" rx="12"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="57" x2="360" y2="57" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="115" x2="360" y2="115" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="173" x2="360" y2="173" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="90" y1="0" x2="90" y2="230" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="180" y1="0" x2="180" y2="230" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="270" y1="0" x2="270" y2="230" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="360" height="36" fill="#ffffff" fill-opacity="0.05" rx="12"/>
+  <circle cx="16" cy="18" r="5" fill="#ff5f57"/>
+  <circle cx="32" cy="18" r="5" fill="#febc2e"/>
+  <circle cx="48" cy="18" r="5" fill="#28c840"/>
+  <text x="180" y="23" font-family="'SF Mono', 'Courier New', monospace" font-size="11" fill="#ffffff" fill-opacity="0.7" text-anchor="middle" letter-spacing="2">ASR  ·  AGENTIC  AI  INFERENCE</text>
+
+  <!-- Audio waveform — center -->
+  <!-- bars: x positions centered around 180, heights vary to mimic speech waveform -->
+  <!-- Each bar: x = 70 + i*8, centered at y=115, half-height listed -->
+  <g filter="url(#glow)" fill="url(#wave-grd)">
+    <rect x="72"  y="109" width="4" height="12" rx="2"/>
+    <rect x="80"  y="101" width="4" height="28" rx="2"/>
+    <rect x="88"  y="95"  width="4" height="40" rx="2"/>
+    <rect x="96"  y="85"  width="4" height="60" rx="2"/>
+    <rect x="104" y="78"  width="4" height="74" rx="2"/>
+    <rect x="112" y="88"  width="4" height="54" rx="2"/>
+    <rect x="120" y="70"  width="4" height="90" rx="2"/>
+    <rect x="128" y="80"  width="4" height="70" rx="2"/>
+    <rect x="136" y="60"  width="4" height="110" rx="2"/>
+    <rect x="144" y="75"  width="4" height="80" rx="2"/>
+    <rect x="152" y="65"  width="4" height="100" rx="2"/>
+    <rect x="160" y="78"  width="4" height="74" rx="2"/>
+    <rect x="168" y="68"  width="4" height="94" rx="2"/>
+    <rect x="176" y="60"  width="4" height="110" rx="2"/>
+    <rect x="184" y="72"  width="4" height="86" rx="2"/>
+    <rect x="192" y="65"  width="4" height="100" rx="2"/>
+    <rect x="200" y="80"  width="4" height="70" rx="2"/>
+    <rect x="208" y="62"  width="4" height="106" rx="2"/>
+    <rect x="216" y="75"  width="4" height="80" rx="2"/>
+    <rect x="224" y="88"  width="4" height="54" rx="2"/>
+    <rect x="232" y="78"  width="4" height="74" rx="2"/>
+    <rect x="240" y="90"  width="4" height="50" rx="2"/>
+    <rect x="248" y="100" width="4" height="30" rx="2"/>
+    <rect x="256" y="105" width="4" height="20" rx="2"/>
+    <rect x="264" y="110" width="4" height="10" rx="2"/>
+  </g>
+
+  <!-- Neural network nodes — left panel -->
+  <circle cx="30" cy="65"  r="5" fill="#a855f7" opacity="0.8"/>
+  <circle cx="30" cy="90"  r="5" fill="#a855f7" opacity="0.8"/>
+  <circle cx="30" cy="115" r="5" fill="#a855f7" opacity="0.8"/>
+  <circle cx="30" cy="140" r="5" fill="#a855f7" opacity="0.8"/>
+  <circle cx="30" cy="165" r="5" fill="#a855f7" opacity="0.8"/>
+
+  <circle cx="55" cy="78"  r="5" fill="#c084fc" opacity="0.8"/>
+  <circle cx="55" cy="115" r="5" fill="#c084fc" opacity="0.8"/>
+  <circle cx="55" cy="152" r="5" fill="#c084fc" opacity="0.8"/>
+
+  <!-- Connections -->
+  <line x1="30" y1="65"  x2="55" y2="78"  stroke="#a855f7" stroke-opacity="0.4" stroke-width="1"/>
+  <line x1="30" y1="90"  x2="55" y2="78"  stroke="#a855f7" stroke-opacity="0.4" stroke-width="1"/>
+  <line x1="30" y1="90"  x2="55" y2="115" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1"/>
+  <line x1="30" y1="115" x2="55" y2="78"  stroke="#a855f7" stroke-opacity="0.4" stroke-width="1"/>
+  <line x1="30" y1="115" x2="55" y2="115" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1"/>
+  <line x1="30" y1="115" x2="55" y2="152" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1"/>
+  <line x1="30" y1="140" x2="55" y2="115" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1"/>
+  <line x1="30" y1="140" x2="55" y2="152" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1"/>
+  <line x1="30" y1="165" x2="55" y2="152" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1"/>
+
+  <!-- RAG badge — right panel -->
+  <rect x="284" y="55" width="60" height="26" rx="6" fill="url(#rag-grd)"/>
+  <text x="314" y="73" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">RAG · VAD</text>
+
+  <!-- Metrics -->
+  <rect x="284" y="90" width="60" height="20" rx="4" fill="#ffffff" fill-opacity="0.07"/>
+  <text x="314" y="104" font-family="Arial, sans-serif" font-size="10" fill="#00c6ff" text-anchor="middle">WER −21%</text>
+
+  <rect x="284" y="116" width="60" height="20" rx="4" fill="#ffffff" fill-opacity="0.07"/>
+  <text x="314" y="130" font-family="Arial, sans-serif" font-size="10" fill="#00c6ff" text-anchor="middle">F1  0.91</text>
+
+  <rect x="284" y="142" width="60" height="20" rx="4" fill="#ffffff" fill-opacity="0.07"/>
+  <text x="314" y="156" font-family="Arial, sans-serif" font-size="10" fill="#00c6ff" text-anchor="middle">38ms latency</text>
+
+  <!-- Footer tags -->
+  <rect x="0" y="198" width="360" height="32" fill="#ffffff" fill-opacity="0.05" rx="0 0 12 12"/>
+  <text x="16" y="218" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#a855f7" opacity="0.9">#PyTorch</text>
+  <text x="73" y="218" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#a855f7" opacity="0.9">#HuggingFace</text>
+  <text x="152" y="218" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#a855f7" opacity="0.9">#LangChain</text>
+  <text x="225" y="218" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#a855f7" opacity="0.9">#Pinecone</text>
+  <text x="291" y="218" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#a855f7" opacity="0.9">#CUDA</text>
+</svg>

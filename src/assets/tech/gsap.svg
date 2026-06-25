@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Dark background -->
+  <rect width="256" height="256" fill="#0d0d0d" rx="32"/>
+
+  <!-- GSAP green glow ring -->
+  <circle cx="128" cy="100" r="62" fill="none" stroke="#88CE02" stroke-width="6" opacity="0.2"/>
+
+  <!-- Inner circle -->
+  <circle cx="128" cy="100" r="50" fill="#88CE02" opacity="0.12"/>
+
+  <!-- Greensock "G" emblem — stylised arc + bar -->
+  <path d="M128 55
+           A45 45 0 1 0 173 100
+           L148 100
+           A20 20 0 1 1 128 80 Z"
+        fill="#88CE02"/>
+
+  <!-- Horizontal bar through G -->
+  <rect x="128" y="92" width="45" height="16" rx="8" fill="#88CE02"/>
+
+  <!-- "GSAP" wordmark -->
+  <text x="128" y="182"
+        font-family="'Arial Black', 'Arial Bold', Arial, sans-serif"
+        font-size="32"
+        font-weight="900"
+        fill="#88CE02"
+        text-anchor="middle"
+        letter-spacing="4">GSAP</text>
+
+  <!-- Tagline -->
+  <text x="128" y="214"
+        font-family="Arial, sans-serif"
+        font-size="11"
+        fill="#88CE02"
+        fill-opacity="0.55"
+        text-anchor="middle"
+        letter-spacing="2">ANIMATION</text>
+</svg>

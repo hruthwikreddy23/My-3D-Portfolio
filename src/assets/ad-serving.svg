@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 230">
+  <defs>
+    <linearGradient id="ads-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0d2137"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fb923c"/>
+      <stop offset="100%" style="stop-color:#f97316"/>
+    </linearGradient>
+    <linearGradient id="bar3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdba74"/>
+      <stop offset="100%" style="stop-color:#fb923c"/>
+    </linearGradient>
+    <linearGradient id="bar4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee"/>
+      <stop offset="100%" style="stop-color:#0891b2"/>
+    </linearGradient>
+    <linearGradient id="bar5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="360" height="230" fill="url(#ads-bg)" rx="12"/>
+
+  <!-- Subtle grid -->
+  <line x1="20" y1="55"  x2="340" y2="55"  stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="20" y1="95"  x2="340" y2="95"  stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="20" y1="135" x2="340" y2="135" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="20" y1="175" x2="340" y2="175" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="360" height="36" fill="#ffffff" fill-opacity="0.05" rx="12"/>
+  <circle cx="16" cy="18" r="5" fill="#ff5f57"/>
+  <circle cx="32" cy="18" r="5" fill="#febc2e"/>
+  <circle cx="48" cy="18" r="5" fill="#28c840"/>
+  <text x="180" y="23" font-family="'SF Mono', 'Courier New', monospace" font-size="11" fill="#ffffff" fill-opacity="0.7" text-anchor="middle" letter-spacing="2">ML  AD  SERVING  PLATFORM</text>
+
+  <!-- Pipeline labels -->
+  <text x="30" y="58" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" fill-opacity="0.4" text-anchor="middle">Retrieve</text>
+  <text x="30" y="68" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" fill-opacity="0.4" text-anchor="middle">↓</text>
+  <text x="30" y="80" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" fill-opacity="0.4" text-anchor="middle">Filter</text>
+  <text x="30" y="90" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" fill-opacity="0.4" text-anchor="middle">↓</text>
+  <text x="30" y="102" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" fill-opacity="0.4" text-anchor="middle">Predict</text>
+  <text x="30" y="112" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" fill-opacity="0.4" text-anchor="middle">↓</text>
+  <text x="30" y="124" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" fill-opacity="0.4" text-anchor="middle">Rank</text>
+
+  <!-- Bar chart — models compared -->
+  <!-- X-axis baseline -->
+  <line x1="75" y1="185" x2="335" y2="185" stroke="#ffffff" stroke-opacity="0.15" stroke-width="1"/>
+  <line x1="75" y1="45"  x2="75"  y2="185" stroke="#ffffff" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Y-axis labels -->
+  <text x="70" y="188" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" fill-opacity="0.4" text-anchor="end">0</text>
+  <text x="70" y="149" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" fill-opacity="0.4" text-anchor="end">0.25</text>
+  <text x="70" y="110" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" fill-opacity="0.4" text-anchor="end">0.5</text>
+  <text x="70" y="71"  font-family="Arial, sans-serif" font-size="8" fill="#ffffff" fill-opacity="0.4" text-anchor="end">0.75</text>
+  <text x="70" y="52"  font-family="Arial, sans-serif" font-size="8" fill="#ffffff" fill-opacity="0.4" text-anchor="end">1.0</text>
+
+  <!-- Grid horizontals for chart -->
+  <line x1="75" y1="149" x2="335" y2="149" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="75" y1="110" x2="335" y2="110" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="75" y1="71"  x2="335" y2="71"  stroke="#ffffff" stroke-opacity="0.06" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- LR Bar (AUC ~0.68) → height = 0.68 * 140 = 95px, top = 185-95=90 -->
+  <rect x="90"  y="119" width="30" height="66" fill="url(#bar1)" rx="3 3 0 0" opacity="0.85"/>
+  <text x="105" y="115" font-family="Arial, sans-serif" font-size="8" fill="#f97316" text-anchor="middle">0.68</text>
+  <text x="105" y="197" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" fill-opacity="0.5" text-anchor="middle">LR</text>
+
+  <!-- FM Bar (AUC ~0.71) → height ~99, top=86 -->
+  <rect x="130" y="112" width="30" height="73" fill="url(#bar2)" rx="3 3 0 0" opacity="0.85"/>
+  <text x="145" y="108" font-family="Arial, sans-serif" font-size="8" fill="#fb923c" text-anchor="middle">0.71</text>
+  <text x="145" y="197" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" fill-opacity="0.5" text-anchor="middle">FM</text>
+
+  <!-- DeepFM Bar (AUC ~0.76) → height ~106, top=79 -->
+  <rect x="170" y="79" width="30" height="106" fill="url(#bar3)" rx="3 3 0 0" opacity="0.85"/>
+  <text x="185" y="75" font-family="Arial, sans-serif" font-size="8" fill="#fdba74" text-anchor="middle">0.76</text>
+  <text x="185" y="197" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" fill-opacity="0.5" text-anchor="middle">DeepFM</text>
+
+  <!-- Divider -->
+  <line x1="220" y1="50" x2="220" y2="190" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- KPI metrics — right panel -->
+  <text x="260" y="68" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" fill-opacity="0.5" text-anchor="middle">SYSTEM METRICS</text>
+
+  <rect x="225" y="76" width="120" height="26" rx="5" fill="#ffffff" fill-opacity="0.07"/>
+  <text x="255" y="94" font-family="Arial, sans-serif" font-size="10" fill="#22d3ee" text-anchor="middle">P99</text>
+  <text x="320" y="94" font-family="'SF Mono', 'Courier New', monospace" font-size="10" font-weight="bold" fill="#22d3ee" text-anchor="middle">&lt;10ms</text>
+
+  <rect x="225" y="110" width="120" height="26" rx="5" fill="#ffffff" fill-opacity="0.07"/>
+  <text x="255" y="128" font-family="Arial, sans-serif" font-size="10" fill="#34d399" text-anchor="middle">QPS</text>
+  <text x="320" y="128" font-family="'SF Mono', 'Courier New', monospace" font-size="10" font-weight="bold" fill="#34d399" text-anchor="middle">150+/node</text>
+
+  <rect x="225" y="144" width="120" height="26" rx="5" fill="#ffffff" fill-opacity="0.07"/>
+  <text x="255" y="162" font-family="Arial, sans-serif" font-size="10" fill="#f97316" text-anchor="middle">AUC</text>
+  <text x="320" y="162" font-family="'SF Mono', 'Courier New', monospace" font-size="10" font-weight="bold" fill="#f97316" text-anchor="middle">0.76</text>
+
+  <rect x="225" y="178" width="120" height="26" rx="5" fill="#ffffff" fill-opacity="0.07"/>
+  <text x="255" y="196" font-family="Arial, sans-serif" font-size="10" fill="#a78bfa" text-anchor="middle">Scale</text>
+  <text x="320" y="196" font-family="'SF Mono', 'Courier New', monospace" font-size="10" font-weight="bold" fill="#a78bfa" text-anchor="middle">1M+ DAU</text>
+
+  <!-- Footer tags -->
+  <rect x="0" y="198" width="360" height="32" fill="#ffffff" fill-opacity="0.05"/>
+  <text x="16"  y="218" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#f97316" opacity="0.9">#FastAPI</text>
+  <text x="64"  y="218" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#f97316" opacity="0.9">#PyTorch</text>
+  <text x="118" y="218" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#f97316" opacity="0.9">#PostgreSQL</text>
+  <text x="194" y="218" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#f97316" opacity="0.9">#Redis</text>
+  <text x="234" y="218" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#f97316" opacity="0.9">#DynamoDB</text>
+  <text x="300" y="218" font-family="'SF Mono', 'Courier New', monospace" font-size="9" fill="#f97316" opacity="0.9">#Docker</text>
+</svg>

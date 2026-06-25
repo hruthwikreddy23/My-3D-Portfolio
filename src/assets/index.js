@@ -3,10 +3,19 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import frontend from "./frontend.png";
+import backend from "./backend.png";
+import cloud from "./cloud.png";
+import fsd from "./fsd.png";
 import dv from "./dv.png";
 import uix from "./uix.png";
 import ai from "./ai.png";
 import vmware from "./company/vmware.png";
+import deloitte from "./company/deloitte.svg";
+
+import cajunAsr from "./cajun-asr.svg";
+import adServing from "./ad-serving.svg";
+import schedulex from "./schedulex.svg";
+import apiGuard from "./api-guard.svg";
 
 import ull from "./company/ull.png";
 
@@ -23,6 +32,10 @@ import nextjs from "./tech/nextjs.png";
 import aws from "./tech/aws.png";
 import python from "./tech/python.png";
 import restapi from "./tech/restapi.png";
+import gsap from "./tech/gsap.svg";
+import framer from "./tech/framer.svg";
+import graphql from "./tech/graphql.svg";
+import vercel from "./tech/vercel.svg";
 
 import splitsync from "./splitsync.png";
 import unicycle from "./unicycle.png";
@@ -47,6 +60,9 @@ export {
   typescript,
   threejs,
   frontend,
+  backend,
+  cloud,
+  fsd,
   ull,
   nextjs,
   aws,
@@ -61,5 +77,14 @@ export {
   uix,
   ai,
   vmware,
+  deloitte,
   splitsync,
+  cajunAsr,
+  adServing,
+  schedulex,
+  apiGuard,
+  gsap,
+  framer,
+  graphql,
+  vercel,
 };
