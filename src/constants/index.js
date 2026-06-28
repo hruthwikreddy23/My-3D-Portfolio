@@ -2,9 +2,7 @@ import {
   javascript,
   typescript,
   reactjs,
-  tailwind,
   nodejs,
-  threejs,
   backend,
   cloud,
   fsd,
@@ -13,19 +11,44 @@ import {
   nextjs,
   aws,
   python,
-  restapi,
   carol,
   margala,
   priya,
-  gsap,
-  framer,
   graphql,
-  vercel,
+  docker,
+  mongodb,
+  git,
+  postgresql,
+  redis,
+  pytorch,
+  springboot,
+  kubernetes,
+  angular,
+  fastapi,
+  langchain,
+  terraform,
+  java,
+  csharp,
+  bash,
+  mysql,
+  elasticsearch,
+  azure,
+  jenkins,
+  huggingface,
+  mlflow,
   deloitte,
   cajunAsr,
   adServing,
-  schedulex,
-  apiGuard,
+  edaProject,
+  tensorflow,
+  cuda,
+  sklearn,
+  pinecone,
+  kicad,
+  ltspice,
+  cpp,
+  ngspice,
+  multisim,
 } from "../assets";
 
 export const navLinks = [
@@ -62,62 +85,74 @@ const services = [
   },
 ];
 
-const technologies = [
+const techCategories = [
   {
-    name: "Next JS",
-    icon: nextjs,
+    label: "Languages",
+    items: [
+      { name: "Python",       icon: python },
+      { name: "JavaScript",   icon: javascript },
+      { name: "TypeScript",   icon: typescript },
+      { name: "Java",         icon: java },
+      { name: "C++",          icon: cpp },
+      { name: "C#",           icon: csharp },
+      { name: "Bash / Shell", icon: bash },
+    ],
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    label: "Machine Learning",
+    items: [
+      { name: "PyTorch",      icon: pytorch },
+      { name: "TensorFlow",   icon: tensorflow },
+      { name: "HuggingFace",  icon: huggingface },
+      { name: "LangChain",    icon: langchain },
+      { name: "Scikit-learn", icon: sklearn },
+      { name: "MLflow",       icon: mlflow },
+      { name: "CUDA / HPC",   icon: cuda },
+    ],
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    label: "Web & Backend",
+    items: [
+      { name: "React",       icon: reactjs },
+      { name: "Angular",     icon: angular },
+      { name: "Next.js",     icon: nextjs },
+      { name: "Node.js",     icon: nodejs },
+      { name: "FastAPI",     icon: fastapi },
+      { name: "Spring Boot", icon: springboot },
+      { name: "GraphQL",     icon: graphql },
+    ],
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    label: "Databases",
+    items: [
+      { name: "PostgreSQL",    icon: postgresql },
+      { name: "MongoDB",       icon: mongodb },
+      { name: "Redis",         icon: redis },
+      { name: "MySQL",         icon: mysql },
+      { name: "Elasticsearch", icon: elasticsearch },
+      { name: "Pinecone",      icon: pinecone },
+    ],
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    label: "Cloud & DevOps",
+    items: [
+      { name: "AWS",        icon: aws },
+      { name: "Azure",      icon: azure },
+      { name: "Docker",     icon: docker },
+      { name: "Kubernetes", icon: kubernetes },
+      { name: "Terraform",  icon: terraform },
+      { name: "Jenkins",    icon: jenkins },
+      { name: "Git",        icon: git },
+    ],
   },
   {
-    name: "REST API",
-    icon: restapi,
-  },
-  {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: "AWS",
-    icon: aws,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "GSAP",
-    icon: gsap,
-  },
-  {
-    name: "Framer Motion",
-    icon: framer,
-  },
-  {
-    name: "GraphQL",
-    icon: graphql,
-  },
-  {
-    name: "Vercel",
-    icon: vercel,
+    label: "Hardware & EDA",
+    items: [
+      { name: "KiCAD",    icon: kicad },
+      { name: "LTspice",  icon: ltspice },
+      { name: "Ngspice",  icon: ngspice },
+      { name: "Multisim", icon: multisim },
+    ],
   },
 ];
 
@@ -127,7 +162,7 @@ const experiences = [
     company_name: "Deloitte",
     icon: deloitte,
     iconBg: "#022B3A",
-    date: "May 2023 – Dec 2024",
+    date: "Sep 2023 – Nov 2024",
     points: [
       "Designed object-oriented, multi-tiered Spring Boot microservices using Controller-Service-Repository layered architecture with interface-based abstractions and Spring IoC dependency injection, reducing onboarding time for new services by 40% while enforcing OAuth2/JWT-based access control.",
       "Developed multi-threaded, asynchronous request handling using Spring's thread pool for distributed RESTful APIs backed by MongoDB, delivering sub-50ms response times during peak operational loads.",
@@ -138,14 +173,26 @@ const experiences = [
     ],
   },
   {
-    title: "Software Engineer, AI/ML & Data Systems | Research Assistant",
+    title: "Graduate Assistant – Electronics & Systems",
     company_name: "University of Louisiana at Lafayette",
     icon: ull,
     iconBg: "#0c0d0fff",
-    date: "Jan 2025 – May 2026",
+    date: "Jan 2025 – May 2025",
+    points: [
+      "Designed and simulated analog and mixed-signal circuits in KiCAD and LTspice, including op-amp filters, voltage regulators, and oscillator circuits with SPICE-verified frequency and transient analysis.",
+      "Performed SPICE simulations using Ngspice and Multisim to validate circuit behavior, identify parasitic effects, and iterate on PCB-level design decisions.",
+      "Developed Python automation scripts for batch SPICE netlist generation and post-simulation data extraction, reducing manual analysis time by 60%.",
+      "Assisted in lab instruction for electronics courses, guiding students through circuit prototyping, oscilloscope measurements, and PCB design workflows.",
+    ],
+  },
+  {
+    title: "Research Assistant – AI/ML & Systems",
+    company_name: "University of Louisiana at Lafayette",
+    icon: ull,
+    iconBg: "#0c0d0fff",
+    date: "Jun 2025 – May 2026",
     points: [
       "Architected multi-agent LangChain workflows with tool-augmented orchestration, shared context management, and parallel agent execution, integrating AWS Bedrock for LLM invocation and MLflow for systematic evaluation across LLM-based services.",
-      "Orchestrated multi-step agentic workflows using AWS Step Functions for stateful, long-running LLM pipeline execution, and provisioned agentic AI infrastructure as code using AWS CDK for repeatable, scalable deployments.",
       "Engineered production backend services for distributed, university-wide web platforms using Python and FastAPI, optimizing SQL queries and improving system responsiveness by 40% for 21,000+ users across 15+ departments.",
       "Fine-tuned a Whisper-based ASR model on 100+ hours of Cajun-French speech using QLoRA, PyTorch FSDP, and mixed-precision training on HPC/CUDA clusters, achieving a 21% WER reduction and 40% lower VRAM usage.",
       "Engineered ML infrastructure for 20+ reporting services with CloudWatch alarms and Prometheus/Grafana dashboards, cutting report generation from 8 hours to under 30 seconds.",
@@ -183,109 +230,45 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Cajun-French ASR & Agentic AI System",
+    name: "Cajun-French ASR & Agentic AI Platform",
     description:
-      "Fine-tuned a Whisper ASR model on 100+ hours of Cajun-French audio using PyTorch FSDP, QLoRA, and mixed-precision training on HPC/CUDA clusters (21% WER reduction). Built a LangChain + Pinecone RAG system with real-time WebSocket streaming inference and Voice Activity Detection.",
+      "Fine-tuned a Whisper ASR model on 100+ hours of Cajun-French audio using PyTorch FSDP, QLoRA, and mixed-precision training on HPC/CUDA clusters achieving 21% WER reduction. Built a multi-agent LangChain + Pinecone RAG system with real-time WebSocket streaming and Voice Activity Detection.",
     tags: [
-      {
-        name: "PyTorch",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "HuggingFace",
-        color: "green-text-gradient",
-      },
-      {
-        name: "LangChain",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Pinecone",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CUDA/HPC",
-        color: "green-text-gradient",
-      },
+      { name: "PyTorch",     color: "blue-text-gradient" },
+      { name: "HuggingFace", color: "green-text-gradient" },
+      { name: "LangChain",   color: "pink-text-gradient" },
+      { name: "Pinecone",    color: "blue-text-gradient" },
+      { name: "CUDA / HPC",  color: "green-text-gradient" },
     ],
     image: cajunAsr,
   },
   {
-    name: "Open-Source Ad Serving Platform",
+    name: "Open-Source ML Ad Serving Platform",
     description:
-      "Distributed ML-powered ad serving pipeline (Retrieval-Filter-Predict-Rank) using PyTorch DeepFM/LR/FM models on Criteo ad logs (AUC 0.76). Achieved <10ms P99 latency and 150+ QPS/node at 1M+ DAU scale with Redis frequency capping and Prometheus/Grafana observability.",
+      "Distributed ML-powered ad serving pipeline (Retrieval → Filter → Predict → Rank) using PyTorch DeepFM, LR, and FM models trained on Criteo logs (AUC 0.76). Achieved <10ms P99 latency at 150+ QPS/node for 1M+ DAU scale with Redis frequency capping and Prometheus/Grafana observability.",
     tags: [
-      {
-        name: "Python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "FastAPI",
-        color: "green-text-gradient",
-      },
-      {
-        name: "PyTorch",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "PostgreSQL",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Redis",
-        color: "green-text-gradient",
-      },
-      {
-        name: "DynamoDB",
-        color: "white-text-gradient",
-      },
+      { name: "Python",     color: "blue-text-gradient" },
+      { name: "FastAPI",    color: "green-text-gradient" },
+      { name: "PyTorch",    color: "pink-text-gradient" },
+      { name: "PostgreSQL", color: "blue-text-gradient" },
+      { name: "Redis",      color: "green-text-gradient" },
+      { name: "Docker",     color: "white-text-gradient" },
     ],
     image: adServing,
   },
   {
-    name: "ScheduleX – Shift Management System",
+    name: "EDA Circuit Design & SPICE Simulation Workbench",
     description:
-      "Full-stack React and Supabase scheduling platform supporting 500+ weekly shifts for 50 student workers. Engineered a FIFO approval engine using Priority Queue, Greedy, and Hash Set algorithms processing 1,300+ shift requests, with GPS clock-in tracking and 180ms real-time sync.",
+      "Designed and simulated analog/mixed-signal circuits in KiCAD and LTspice — op-amp filters, voltage regulators, and oscillator circuits with SPICE-verified transient and frequency analysis. Used Ngspice and Multisim for cross-validation; automated netlist generation and post-simulation data extraction with Python.",
     tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "TypeScript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Supabase",
-        color: "pink-text-gradient",
-      },
+      { name: "KiCAD",   color: "blue-text-gradient" },
+      { name: "LTspice", color: "green-text-gradient" },
+      { name: "Ngspice", color: "pink-text-gradient" },
+      { name: "Python",  color: "blue-text-gradient" },
+      { name: "SPICE",   color: "green-text-gradient" },
     ],
-    image: schedulex,
-  },
-  {
-    name: "API-ContractGuard",
-    description:
-      "Modular, object-oriented Node.js CLI validating API responses against JSON Schema contracts with 99.9% drift detection. Backed by a 36-test Jest suite (98% coverage) with three-tier PASS/WARNING/FAIL reporting across 10 endpoints, integrated into CI/CD to automatically block breaking changes.",
-    tags: [
-      {
-        name: "Node.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "JSON Schema",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Jest",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "CI/CD",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: apiGuard,
+    image: edaProject,
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, techCategories, experiences, testimonials, projects };

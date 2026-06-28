@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#1a1a1a" rx="24"/>
+  <!-- Express wordmark -->
+  <text x="128" y="108" font-family="Arial" font-size="46" font-weight="300" fill="white" text-anchor="middle">express</text>
+  <!-- Thin underline accent -->
+  <line x1="46" y1="120" x2="210" y2="120" stroke="#888" stroke-width="2"/>
+  <!-- node.js sub-label -->
+  <text x="128" y="155" font-family="Arial" font-size="20" font-weight="400" fill="#888" text-anchor="middle">for Node.js</text>
+  <text x="128" y="220" font-family="Arial" font-size="20" font-weight="700" fill="white" text-anchor="middle">Express.js</text>
+</svg>

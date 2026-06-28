@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#0d1117" rx="24"/>
+  <!-- Terraform crystal/diamond — four rhombus faces -->
+  <!-- Top-left diamond (purple) -->
+  <polygon points="88,52 128,76 128,138 88,114" fill="#7B42BC"/>
+  <!-- Top-right diamond (lighter purple) -->
+  <polygon points="168,52 128,76 128,138 168,114" fill="#9B59D0"/>
+  <!-- Bottom center diamond -->
+  <polygon points="88,124 128,148 128,196 88,172" fill="#7B42BC"/>
+  <text x="128" y="228" font-family="Arial" font-size="20" font-weight="700" fill="#7B42BC" text-anchor="middle">Terraform</text>
+</svg>

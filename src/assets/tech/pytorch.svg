@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#1a1a2e" rx="24"/>
+  <!-- outer flame -->
+  <path d="M128,28 C110,58 80,92 78,122 C74,154 90,176 108,188
+           C100,170 104,150 118,140 C113,158 120,176 134,184
+           C148,192 166,182 174,166 C184,148 182,126 168,106
+           C163,118 157,130 145,135 C154,116 160,94 148,64
+           C143,78 139,94 128,102 C133,83 136,58 128,28Z"
+        fill="#EE4C2C"/>
+  <!-- inner glow -->
+  <path d="M128,92 C118,108 110,122 110,138 C110,156 120,170 128,176
+           C136,170 146,156 146,138 C146,122 138,108 128,92Z"
+        fill="#F5A82E"/>
+  <!-- PyTorch circle dot -->
+  <circle cx="152" cy="182" r="18" fill="#EE4C2C"/>
+  <text x="128" y="234" font-family="Arial" font-size="20" font-weight="700" fill="#EE4C2C" text-anchor="middle">PyTorch</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#FFD21E" rx="24"/>
+  <!-- Face -->
+  <circle cx="128" cy="112" r="72" fill="#FFD21E" stroke="#333" stroke-width="6"/>
+  <!-- Eyes (wide open happy) -->
+  <ellipse cx="100" cy="98" rx="12" ry="14" fill="#333"/>
+  <ellipse cx="156" cy="98" rx="12" ry="14" fill="#333"/>
+  <!-- Eye shine -->
+  <circle cx="96" cy="94" r="4" fill="white"/>
+  <circle cx="152" cy="94" r="4" fill="white"/>
+  <!-- Big smile -->
+  <path d="M88,130 Q128,165 168,130" fill="#FF6B6B" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+  <!-- Teeth -->
+  <path d="M100,136 Q128,150 156,136" fill="white"/>
+  <!-- Rosy cheeks -->
+  <ellipse cx="82" cy="120" rx="16" ry="10" fill="#FF9494" opacity="0.5"/>
+  <ellipse cx="174" cy="120" rx="16" ry="10" fill="#FF9494" opacity="0.5"/>
+  <!-- Hug arms -->
+  <path d="M56,148 Q38,128 50,108" fill="none" stroke="#333" stroke-width="10" stroke-linecap="round"/>
+  <path d="M200,148 Q218,128 206,108" fill="none" stroke="#333" stroke-width="10" stroke-linecap="round"/>
+  <text x="128" y="222" font-family="Arial" font-size="17" font-weight="700" fill="#333" text-anchor="middle">HuggingFace</text>
+</svg>

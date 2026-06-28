@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#0d1117" rx="24"/>
+  <!-- Angular shield -->
+  <polygon points="128,28 196,56 183,170 128,202 73,170 60,56" fill="url(#angGrad)"/>
+  <defs>
+    <linearGradient id="angGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DD0031"/>
+      <stop offset="100%" stop-color="#C3002F"/>
+    </linearGradient>
+  </defs>
+  <!-- White A shape with diagonal cuts -->
+  <polygon points="128,58 96,148 110,148 117,128 139,128 146,148 160,148" fill="white"/>
+  <!-- Crossbar cut (creates the A hole) -->
+  <polygon points="121,120 135,120 128,100" fill="url(#angGrad)"/>
+  <!-- Diagonal wing cuts top left -->
+  <text x="128" y="232" font-family="Arial" font-size="22" font-weight="700" fill="#DD0031" text-anchor="middle">Angular</text>
+</svg>

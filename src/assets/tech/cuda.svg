@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#0d1117" rx="24"/>
+  <!-- NVIDIA-style green rays -->
+  <polygon points="128,40 148,80 180,56" fill="#76B900" opacity="0.5"/>
+  <polygon points="128,40 168,90 196,78" fill="#76B900" opacity="0.3"/>
+  <!-- GPU chip body -->
+  <rect x="64" y="86" width="128" height="90" rx="8" fill="#1a2a1a"/>
+  <rect x="72" y="94" width="112" height="74" rx="4" fill="#76B900" opacity="0.15"/>
+  <!-- Chip grid lines -->
+  <line x1="98" y1="94" x2="98" y2="168" stroke="#76B900" stroke-width="1.5" opacity="0.4"/>
+  <line x1="128" y1="94" x2="128" y2="168" stroke="#76B900" stroke-width="1.5" opacity="0.4"/>
+  <line x1="158" y1="94" x2="158" y2="168" stroke="#76B900" stroke-width="1.5" opacity="0.4"/>
+  <line x1="72" y1="120" x2="184" y2="120" stroke="#76B900" stroke-width="1.5" opacity="0.4"/>
+  <line x1="72" y1="144" x2="184" y2="144" stroke="#76B900" stroke-width="1.5" opacity="0.4"/>
+  <!-- CUDA text -->
+  <text x="128" y="148" font-family="Arial Black" font-size="30" font-weight="900" fill="#76B900" text-anchor="middle">CUDA</text>
+  <text x="128" y="218" font-family="Arial" font-size="18" font-weight="700" fill="#76B900" text-anchor="middle">NVIDIA CUDA</text>
+</svg>

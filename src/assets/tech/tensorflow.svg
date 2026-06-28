@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#0d1117" rx="24"/>
+  <!-- TF orange diamond shape -->
+  <polygon points="128,30 200,74 200,162 128,206 56,162 56,74" fill="#FF6F00" opacity="0.15"/>
+  <!-- Outer T shape -->
+  <polygon points="72,70 184,70 184,96 148,96 148,186 108,186 108,96 72,96" fill="#FF6F00"/>
+  <!-- Inner cutout for TF mark -->
+  <polygon points="108,110 148,110 148,96 108,96" fill="#0d1117"/>
+  <!-- F accent line -->
+  <rect x="108" y="126" width="32" height="18" fill="#FF8C00"/>
+  <text x="128" y="226" font-family="Arial" font-size="18" font-weight="700" fill="#FF6F00" text-anchor="middle">TensorFlow</text>
+</svg>

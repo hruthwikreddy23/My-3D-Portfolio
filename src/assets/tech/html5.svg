@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#0d1117" rx="24"/>
+  <!-- HTML5 shield -->
+  <polygon points="128,30 202,50 188,190 128,212 68,190 54,50" fill="#E44D26"/>
+  <polygon points="128,56 192,72 180,174 128,192 76,174 64,72" fill="#F16529"/>
+  <!-- 5 numeral in white -->
+  <text x="128" y="152" font-family="Arial Black" font-size="110" font-weight="900" fill="white" text-anchor="middle">5</text>
+  <text x="128" y="230" font-family="Arial" font-size="20" font-weight="700" fill="#E44D26" text-anchor="middle">HTML5</text>
+</svg>

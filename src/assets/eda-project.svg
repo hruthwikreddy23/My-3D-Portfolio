@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#0a1628"/>
+  <!-- PCB grid background -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2840" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#grid)"/>
+
+  <!-- PCB traces (copper traces in green) -->
+  <!-- Horizontal bus traces -->
+  <line x1="80" y1="200" x2="720" y2="200" stroke="#2d6a2d" stroke-width="4"/>
+  <line x1="80" y1="300" x2="720" y2="300" stroke="#2d6a2d" stroke-width="4"/>
+  <!-- Vertical connections -->
+  <line x1="160" y1="150" x2="160" y2="350" stroke="#2d6a2d" stroke-width="4"/>
+  <line x1="320" y1="150" x2="320" y2="350" stroke="#2d6a2d" stroke-width="4"/>
+  <line x1="480" y1="150" x2="480" y2="350" stroke="#2d6a2d" stroke-width="4"/>
+  <line x1="640" y1="150" x2="640" y2="350" stroke="#2d6a2d" stroke-width="4"/>
+  <!-- Signal traces -->
+  <polyline points="80,240 140,240 140,180 200,180" fill="none" stroke="#4CAF50" stroke-width="3"/>
+  <polyline points="200,180 260,180 260,260 360,260" fill="none" stroke="#4CAF50" stroke-width="3"/>
+  <polyline points="360,260 420,260 420,220 560,220" fill="none" stroke="#4CAF50" stroke-width="3"/>
+  <polyline points="560,220 620,220 620,160 700,160" fill="none" stroke="#4CAF50" stroke-width="3"/>
+  <!-- Signal trace 2 -->
+  <polyline points="80,340 200,340 200,320 340,320" fill="none" stroke="#81C784" stroke-width="2" opacity="0.7"/>
+  <polyline points="340,320 460,320 460,280 580,280 580,340 700,340" fill="none" stroke="#81C784" stroke-width="2" opacity="0.7"/>
+
+  <!-- Solder pads / vias -->
+  <circle cx="160" cy="200" r="8" fill="#4CAF50"/>
+  <circle cx="320" cy="200" r="8" fill="#4CAF50"/>
+  <circle cx="480" cy="200" r="8" fill="#4CAF50"/>
+  <circle cx="640" cy="200" r="8" fill="#4CAF50"/>
+  <circle cx="160" cy="300" r="8" fill="#4CAF50"/>
+  <circle cx="320" cy="300" r="8" fill="#4CAF50"/>
+  <circle cx="480" cy="300" r="8" fill="#4CAF50"/>
+  <circle cx="640" cy="300" r="8" fill="#4CAF50"/>
+
+  <!-- IC Chip component -->
+  <rect x="220" y="190" width="80" height="60" rx="4" fill="#1a3a1a" stroke="#4CAF50" stroke-width="2"/>
+  <text x="260" y="227" font-family="monospace" font-size="12" fill="#4CAF50" text-anchor="middle">IC U1</text>
+  <!-- IC pins -->
+  <line x1="220" y1="205" x2="200" y2="205" stroke="#4CAF50" stroke-width="2"/>
+  <line x1="220" y1="220" x2="200" y2="220" stroke="#4CAF50" stroke-width="2"/>
+  <line x1="220" y1="235" x2="200" y2="235" stroke="#4CAF50" stroke-width="2"/>
+  <line x1="300" y1="205" x2="320" y2="205" stroke="#4CAF50" stroke-width="2"/>
+  <line x1="300" y1="220" x2="320" y2="220" stroke="#4CAF50" stroke-width="2"/>
+  <line x1="300" y1="235" x2="320" y2="235" stroke="#4CAF50" stroke-width="2"/>
+
+  <!-- Resistor symbol (R1) -->
+  <line x1="380" y1="250" x2="400" y2="250" stroke="#66BB6A" stroke-width="3"/>
+  <rect x="400" y="242" width="36" height="16" rx="2" fill="none" stroke="#66BB6A" stroke-width="3"/>
+  <line x1="436" y1="250" x2="456" y2="250" stroke="#66BB6A" stroke-width="3"/>
+  <text x="418" y="238" font-family="monospace" font-size="11" fill="#66BB6A" text-anchor="middle">R1 10kΩ</text>
+
+  <!-- Capacitor symbol (C1) -->
+  <line x1="500" y1="160" x2="500" y2="180" stroke="#66BB6A" stroke-width="3"/>
+  <line x1="482" y1="180" x2="518" y2="180" stroke="#66BB6A" stroke-width="4"/>
+  <line x1="482" y1="192" x2="518" y2="192" stroke="#66BB6A" stroke-width="4"/>
+  <line x1="500" y1="192" x2="500" y2="210" stroke="#66BB6A" stroke-width="3"/>
+  <text x="528" y="188" font-family="monospace" font-size="11" fill="#66BB6A">C1 100nF</text>
+
+  <!-- Op-Amp triangle symbol -->
+  <polygon points="560,190 560,250 620,220" fill="none" stroke="#81C784" stroke-width="2.5"/>
+  <line x1="560" y1="205" x2="548" y2="205" stroke="#81C784" stroke-width="2"/>
+  <line x1="560" y1="235" x2="548" y2="235" stroke="#81C784" stroke-width="2"/>
+  <line x1="620" y1="220" x2="632" y2="220" stroke="#81C784" stroke-width="2"/>
+  <text x="585" y="224" font-family="monospace" font-size="10" fill="#81C784" text-anchor="middle">A741</text>
+
+  <!-- SPICE waveform panel -->
+  <rect x="60" y="390" width="680" height="80" rx="6" fill="#0d1f0d" stroke="#2d6a2d" stroke-width="1.5"/>
+  <!-- Sine wave output -->
+  <path d="M80,430 Q106,400 132,430 Q158,460 184,430 Q210,400 236,430 Q262,460 288,430 Q314,400 340,430 Q366,460 392,430 Q418,400 444,430 Q470,460 496,430 Q522,400 548,430 Q574,460 600,430 Q626,400 652,430 Q678,460 704,430"
+        fill="none" stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="400" y="480" font-family="monospace" font-size="13" fill="#4CAF50" text-anchor="middle">SPICE Transient Analysis — Output Signal</text>
+
+  <!-- Title label -->
+  <text x="400" y="40" font-family="Arial" font-size="22" font-weight="700" fill="#4CAF50" text-anchor="middle">EDA Circuit Design &amp; SPICE Simulation</text>
+  <text x="400" y="65" font-family="Arial" font-size="14" fill="#4CAF50" opacity="0.7" text-anchor="middle">KiCAD · LTspice · Ngspice · Multisim · PCB Layout</text>
+</svg>

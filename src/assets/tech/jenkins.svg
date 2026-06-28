@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#0d1117" rx="24"/>
+  <!-- Butler hat brim -->
+  <rect x="74" y="120" width="108" height="14" rx="7" fill="#D33833"/>
+  <!-- Hat crown -->
+  <rect x="90" y="58" width="76" height="64" rx="8" fill="#D33833"/>
+  <!-- Face -->
+  <ellipse cx="128" cy="158" rx="52" ry="40" fill="#F5DEB3"/>
+  <!-- Eyes -->
+  <circle cx="112" cy="150" r="7" fill="white"/>
+  <circle cx="144" cy="150" r="7" fill="white"/>
+  <circle cx="113" cy="151" r="4" fill="#333"/>
+  <circle cx="145" cy="151" r="4" fill="#333"/>
+  <!-- Mustache -->
+  <path d="M108,172 Q128,162 148,172" fill="#8B6914" stroke="#8B6914" stroke-width="3"/>
+  <!-- Smile -->
+  <path d="M112,180 Q128,192 144,180" fill="none" stroke="#8B6914" stroke-width="4" stroke-linecap="round"/>
+  <!-- Bowtie -->
+  <polygon points="108,196 128,204 108,212" fill="#D33833"/>
+  <polygon points="148,196 128,204 148,212" fill="#D33833"/>
+  <circle cx="128" cy="204" r="5" fill="#A00"/>
+  <text x="128" y="240" font-family="Arial" font-size="18" font-weight="700" fill="#D33833" text-anchor="middle">Jenkins</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#0d1117" rx="24"/>
+  <!-- Teal circle background -->
+  <circle cx="128" cy="108" r="80" fill="#009688"/>
+  <!-- Lightning bolt -->
+  <polygon points="140,40 108,118 130,118 116,178 160,92 136,92" fill="white"/>
+  <text x="128" y="218" font-family="Arial" font-size="22" font-weight="700" fill="#009688" text-anchor="middle">FastAPI</text>
+</svg>

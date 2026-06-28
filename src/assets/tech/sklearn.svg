@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#0d1117" rx="24"/>
+  <!-- Three interlocking circles (sklearn logo motif) -->
+  <circle cx="100" cy="100" r="48" fill="none" stroke="#F7931E" stroke-width="14"/>
+  <circle cx="156" cy="100" r="48" fill="none" stroke="#3499CD" stroke-width="14"/>
+  <circle cx="128" cy="150" r="48" fill="none" stroke="#F7931E" stroke-width="14"/>
+  <!-- Center overlap highlight -->
+  <circle cx="128" cy="114" r="14" fill="#F7931E" opacity="0.8"/>
+  <text x="128" y="218" font-family="Arial" font-size="16" font-weight="700" fill="#F7931E" text-anchor="middle">Scikit-learn</text>
+</svg>

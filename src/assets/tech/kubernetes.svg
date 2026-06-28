@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#0d1b2e" rx="24"/>
+  <!-- Outer ring -->
+  <circle cx="128" cy="108" r="66" fill="none" stroke="#326CE5" stroke-width="9"/>
+  <!-- Hub -->
+  <circle cx="128" cy="108" r="20" fill="#326CE5"/>
+  <!-- 7 spokes: angles -90 + i*51.43° -->
+  <line x1="128" y1="88" x2="128" y2="42" stroke="#326CE5" stroke-width="7" stroke-linecap="round"/>
+  <line x1="144" y1="96" x2="180" y2="67" stroke="#326CE5" stroke-width="7" stroke-linecap="round"/>
+  <line x1="148" y1="113" x2="192" y2="123" stroke="#326CE5" stroke-width="7" stroke-linecap="round"/>
+  <line x1="137" y1="126" x2="157" y2="167" stroke="#326CE5" stroke-width="7" stroke-linecap="round"/>
+  <line x1="119" y1="126" x2="99" y2="167" stroke="#326CE5" stroke-width="7" stroke-linecap="round"/>
+  <line x1="109" y1="113" x2="64" y2="123" stroke="#326CE5" stroke-width="7" stroke-linecap="round"/>
+  <line x1="112" y1="96" x2="77" y2="67" stroke="#326CE5" stroke-width="7" stroke-linecap="round"/>
+  <!-- Outer nodes at each spoke tip -->
+  <circle cx="128" cy="42" r="8" fill="#326CE5"/>
+  <circle cx="180" cy="67" r="8" fill="#326CE5"/>
+  <circle cx="192" cy="123" r="8" fill="#326CE5"/>
+  <circle cx="157" cy="167" r="8" fill="#326CE5"/>
+  <circle cx="99" cy="167" r="8" fill="#326CE5"/>
+  <circle cx="64" cy="123" r="8" fill="#326CE5"/>
+  <circle cx="77" cy="67" r="8" fill="#326CE5"/>
+  <text x="128" y="220" font-family="Arial" font-size="19" font-weight="700" fill="#326CE5" text-anchor="middle">Kubernetes</text>
+</svg>

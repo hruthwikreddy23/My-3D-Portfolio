@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#0d1117" rx="24"/>
+  <!-- Elastic E mark: two horizontal pill/oval shapes -->
+  <!-- Top pill -->
+  <ellipse cx="118" cy="90" rx="62" ry="24" fill="#F0BF1A"/>
+  <!-- Middle pill (larger, slightly right-shifted) -->
+  <ellipse cx="124" cy="128" rx="70" ry="24" fill="#F0BF1A"/>
+  <!-- Bottom pill -->
+  <ellipse cx="118" cy="166" rx="62" ry="24" fill="#F0BF1A"/>
+  <!-- Left edge connector to make "E" shape -->
+  <rect x="52" y="90" width="16" height="100" fill="#F0BF1A"/>
+  <!-- Cutout to create E interior -->
+  <rect x="68" y="114" width="110" height="28" fill="#0d1117"/>
+  <text x="128" y="222" font-family="Arial" font-size="18" font-weight="700" fill="#F0BF1A" text-anchor="middle">Elasticsearch</text>
+</svg>

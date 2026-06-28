@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#0d1117" rx="24"/>
+  <!-- Terminal window -->
+  <rect x="36" y="52" width="184" height="140" rx="10" fill="#1e2a1e"/>
+  <!-- Title bar -->
+  <rect x="36" y="52" width="184" height="30" rx="10" fill="#2a3a2a"/>
+  <!-- Traffic light dots -->
+  <circle cx="60" cy="67" r="7" fill="#FF5F57"/>
+  <circle cx="82" cy="67" r="7" fill="#FFBD2E"/>
+  <circle cx="104" cy="67" r="7" fill="#28CA41"/>
+  <!-- Prompt: $ _ -->
+  <text x="54" y="122" font-family="monospace" font-size="38" font-weight="700" fill="#4AF626">$</text>
+  <text x="92" y="122" font-family="monospace" font-size="38" font-weight="400" fill="#4AF626">_</text>
+  <text x="128" y="210" font-family="Arial" font-size="20" font-weight="700" fill="#4AF626" text-anchor="middle">Bash / Shell</text>
+</svg>

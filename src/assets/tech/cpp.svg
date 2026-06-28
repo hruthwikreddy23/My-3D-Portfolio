@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#0d1117" rx="24"/>
+  <!-- Blue hexagon background -->
+  <polygon points="128,30 200,72 200,156 128,198 56,156 56,72" fill="#004482"/>
+  <!-- C letter -->
+  <path d="M138,80 Q108,80 96,104 Q84,128 96,152 Q108,176 138,176" fill="none" stroke="white" stroke-width="13" stroke-linecap="round"/>
+  <!-- First + -->
+  <line x1="156" y1="106" x2="196" y2="106" stroke="white" stroke-width="10" stroke-linecap="round"/>
+  <line x1="176" y1="86" x2="176" y2="126" stroke="white" stroke-width="10" stroke-linecap="round"/>
+  <!-- Second + (offset right and down slightly) -->
+  <!-- We only have room for one visible +, let's use C++ classic layout -->
+  <text x="180" y="170" font-family="Arial Black" font-size="36" font-weight="900" fill="white" text-anchor="middle">++</text>
+  <text x="128" y="226" font-family="Arial" font-size="20" font-weight="700" fill="#659AD2" text-anchor="middle">C++</text>
+</svg>

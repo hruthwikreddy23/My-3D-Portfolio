@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#1a1a2e" rx="24"/>
+  <!-- ear -->
+  <circle cx="72" cy="88" r="40" fill="#4a94c8"/>
+  <circle cx="72" cy="88" r="26" fill="#336791"/>
+  <!-- head -->
+  <circle cx="130" cy="105" r="68" fill="#336791"/>
+  <!-- trunk -->
+  <path d="M168,150 Q194,174 186,210 Q180,224 168,218 Q156,212 160,195 Q166,176 156,158 Z" fill="#336791"/>
+  <!-- tusk -->
+  <path d="M107,150 Q94,170 88,180" stroke="white" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <!-- eye -->
+  <circle cx="114" cy="88" r="13" fill="white"/>
+  <circle cx="117" cy="88" r="7" fill="#0d1117"/>
+  <circle cx="115" cy="85" r="2.5" fill="white"/>
+</svg>

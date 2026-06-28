@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#1a1a2e" rx="24"/>
+  <!-- Redis 3-face cube logo -->
+  <!-- top face -->
+  <polygon points="128,68 200,106 128,144 56,106" fill="#DC382D"/>
+  <!-- left face -->
+  <polygon points="56,106 128,144 128,192 56,154" fill="#8c2318"/>
+  <!-- right face -->
+  <polygon points="200,106 200,154 128,192 128,144" fill="#b02820"/>
+  <text x="128" y="232" font-family="Arial Black" font-size="26" font-weight="900" fill="#DC382D" text-anchor="middle">Redis</text>
+</svg>

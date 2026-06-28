@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#1a1a2e" rx="24"/>
+  <!-- Spring circle ring -->
+  <circle cx="128" cy="112" r="80" fill="none" stroke="#6DB33F" stroke-width="14"/>
+  <!-- Spring leaf shape inside -->
+  <path d="M128,46 C90,52 66,80 66,112 C66,144 90,170 120,176
+           C108,162 104,146 110,130 C116,114 126,106 128,106
+           C130,106 140,114 146,130 C152,146 148,162 136,176
+           C166,170 190,144 190,112 C190,80 166,52 128,46Z"
+        fill="#6DB33F"/>
+  <!-- white center line (vein) -->
+  <path d="M128,58 C128,58 128,170 128,176" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="128" y="225" font-family="Arial" font-size="17" font-weight="700" fill="#6DB33F" text-anchor="middle">Spring Boot</text>
+</svg>
