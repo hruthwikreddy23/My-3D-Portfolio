@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#0a1628"/>
+  <defs>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1e3a5f" opacity="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#dots)"/>
+
+  <!-- Service boxes -->
+  <!-- API Gateway -->
+  <rect x="330" y="50" width="140" height="55" rx="6" fill="#0c2340" stroke="#2563eb" stroke-width="2"/>
+  <text x="400" y="73" font-family="monospace" font-size="11" fill="#60a5fa" text-anchor="middle" font-weight="bold">API Gateway</text>
+  <text x="400" y="91" font-family="monospace" font-size="9" fill="#3b82f6" text-anchor="middle">Spring Boot</text>
+
+  <!-- Auth Service -->
+  <rect x="80" y="175" width="130" height="55" rx="6" fill="#0c2340" stroke="#7c3aed" stroke-width="2"/>
+  <text x="145" y="198" font-family="monospace" font-size="11" fill="#a78bfa" text-anchor="middle" font-weight="bold">Auth Service</text>
+  <text x="145" y="216" font-family="monospace" font-size="9" fill="#7c3aed" text-anchor="middle">OAuth2 / JWT</text>
+
+  <!-- Order Service -->
+  <rect x="260" y="175" width="130" height="55" rx="6" fill="#0c2340" stroke="#059669" stroke-width="2"/>
+  <text x="325" y="198" font-family="monospace" font-size="11" fill="#34d399" text-anchor="middle" font-weight="bold">Order Service</text>
+  <text x="325" y="216" font-family="monospace" font-size="9" fill="#059669" text-anchor="middle">Spring Boot</text>
+
+  <!-- Notify Service -->
+  <rect x="410" y="175" width="130" height="55" rx="6" fill="#0c2340" stroke="#d97706" stroke-width="2"/>
+  <text x="475" y="198" font-family="monospace" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="bold">Notify Service</text>
+  <text x="475" y="216" font-family="monospace" font-size="9" fill="#d97706" text-anchor="middle">RabbitMQ</text>
+
+  <!-- Report Service -->
+  <rect x="590" y="175" width="130" height="55" rx="6" fill="#0c2340" stroke="#e11d48" stroke-width="2"/>
+  <text x="655" y="198" font-family="monospace" font-size="11" fill="#f87171" text-anchor="middle" font-weight="bold">Report Svc</text>
+  <text x="655" y="216" font-family="monospace" font-size="9" fill="#e11d48" text-anchor="middle">FastAPI / Pandas</text>
+
+  <!-- Kafka bus -->
+  <rect x="200" y="305" width="400" height="45" rx="6" fill="#111827" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="324" font-family="monospace" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="bold">Apache Kafka</text>
+  <text x="400" y="341" font-family="monospace" font-size="9" fill="#d97706" text-anchor="middle">Exactly-Once Delivery · Event Streaming</text>
+
+  <!-- Redis -->
+  <rect x="80" y="310" width="100" height="35" rx="5" fill="#0c1f0c" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="130" y="328" font-family="monospace" font-size="10" fill="#4ade80" text-anchor="middle" font-weight="bold">Redis</text>
+  <text x="130" y="340" font-family="monospace" font-size="8" fill="#16a34a" text-anchor="middle">Cache / Q</text>
+
+  <!-- Docker / K8s -->
+  <rect x="620" y="310" width="100" height="35" rx="5" fill="#0a1a2e" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="670" y="328" font-family="monospace" font-size="10" fill="#60a5fa" text-anchor="middle" font-weight="bold">Docker / K8s</text>
+  <text x="670" y="340" font-family="monospace" font-size="8" fill="#2563eb" text-anchor="middle">Containers</text>
+
+  <!-- Grafana -->
+  <rect x="200" y="390" width="180" height="35" rx="5" fill="#1a0e00" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="290" y="413" font-family="monospace" font-size="10" fill="#fbbf24" text-anchor="middle">Grafana · Jenkins CI/CD</text>
+
+  <!-- Elasticsearch -->
+  <rect x="420" y="390" width="180" height="35" rx="5" fill="#0a1628" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="510" y="413" font-family="monospace" font-size="10" fill="#22d3ee" text-anchor="middle">Elasticsearch · Log4j</text>
+
+  <!-- Connector lines: Gateway → services -->
+  <line x1="400" y1="105" x2="145" y2="175" stroke="#2563eb" stroke-width="1.5" opacity="0.5"/>
+  <line x1="400" y1="105" x2="325" y2="175" stroke="#2563eb" stroke-width="1.5" opacity="0.5"/>
+  <line x1="400" y1="105" x2="475" y2="175" stroke="#2563eb" stroke-width="1.5" opacity="0.5"/>
+  <line x1="400" y1="105" x2="655" y2="175" stroke="#2563eb" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Services → Kafka -->
+  <line x1="325" y1="230" x2="340" y2="305" stroke="#f59e0b" stroke-width="1.5" opacity="0.5"/>
+  <line x1="475" y1="230" x2="460" y2="305" stroke="#f59e0b" stroke-width="1.5" opacity="0.5"/>
+  <line x1="655" y1="230" x2="580" y2="305" stroke="#f59e0b" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Stats -->
+  <text x="400" y="470" font-family="monospace" font-size="12" fill="#60a5fa" text-anchor="middle">+40% processing efficiency · −40% message delivery failures · sub-50ms response</text>
+
+  <!-- Title -->
+  <text x="400" y="28" font-family="Arial" font-size="19" font-weight="700" fill="#60a5fa" text-anchor="middle">Distributed Async Microservices Platform</text>
+</svg>

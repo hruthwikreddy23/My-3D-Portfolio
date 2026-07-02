@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#0d1117" rx="24"/>
+  <!-- Django green background pill -->
+  <rect x="40" y="60" width="176" height="136" rx="16" fill="#092E20"/>
+  <!-- White D letterform -->
+  <path d="M76,88 L76,168 L100,168 Q140,168 140,128 Q140,88 100,88 Z
+            M96,104 Q124,104 124,128 Q124,152 96,152 L92,152 L92,104 Z"
+        fill="white"/>
+  <!-- jango letters -->
+  <text x="148" y="148" font-family="Arial" font-size="40" font-weight="900"
+        fill="white" text-anchor="middle" dominant-baseline="middle">j</text>
+  <text x="128" y="205" font-family="Arial" font-size="18" font-weight="700"
+        fill="#44B78B" text-anchor="middle">Django</text>
+</svg>
